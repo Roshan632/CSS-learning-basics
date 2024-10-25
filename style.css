@@ -1,0 +1,168 @@
+body{
+    text-align: center;
+    background-image: url(images/homepage.webp);
+    background-size:cover;
+    
+}
+
+
+div{
+    height: 50px;
+    width: 100px;
+    display: inline-block;
+    border: 1px solid white;
+    align-content: center;
+}
+ .container{
+    margin: 40px;
+} 
+
+
+
+.container{
+     height: 500px;
+    width: 100px; 
+    display: flex;
+    flex-direction:column;
+    justify-content: center;  
+     align-items: center;
+    justify-content: space-around; 
+     margin-top: 200px;  
+
+   
+  
+ }
+.box1{
+    background-color: rgb(232, 250, 215);
+     transition: all 1s ease-in 1s; 
+   transform: rotate(360deg);
+  
+   
+    width: 100px;
+    height: 100px;
+}
+.box1:hover{
+    background-color: blue;
+    transform: scale(2);
+    transform: translate(200px);
+}
+.box2{
+    background-color: rgb(166, 105, 26);
+    transition: all 1s ease-in 1s;
+    transform: rotate(180deg);
+   
+    
+    width: 100px;
+    height: 100px;
+}
+.box2:hover{
+    background-color: blue;
+    transform: scale(2);
+    transform: translate(200px);
+}
+.box3{
+    background-color: antiquewhite;
+    transition: all 1s ease-in 1s;
+    transform: rotate(90deg);
+    
+   
+    
+    width: 100px;
+    height: 100px;
+} 
+.box3:hover{
+    background-color: blue;
+    transform: scale(2);
+    transform: translate(200px);
+    
+}
+.btn{
+    border-radius: 30%;
+    background-color: red;
+    color: black;
+    margin-top: 50%;
+    height: 50px;
+    width: 100px;
+    transition: all 2s ease-in 1s;
+    transform: rotate(360deg);
+    animation-name:colorChange;
+    animation-duration: 0.25s;
+    animation-delay: 0s;
+    animation-iteration-count:infinite ;
+  
+}
+.btn:hover{
+    background-color: blue;
+    box-shadow: 100%;
+    transform: scale(2);
+    transform: translate(200px);
+   
+}
+@keyframes colorChange {
+    from{background-color: red;}
+    to{background-color: aqua;}
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+    
+    height: 100px;
+
+}
+li{
+    
+    list-style-type: none;
+  
+}
+a{
+    text-decoration: none;
+    font-size: 50px;
+    /* color: darkgreen; */
+    transition: all 1s ease 1s;
+    transform: rotate(80deg);
+    animation-name:fontChange 1s ease-in-out 2s infinite normal;
+}
+ a:hover{
+    background-color: dodgerblue;
+    box-shadow: 50px;
+    transform: scale(2);
+}
+a:active:hover{
+    background-color: red;
+} 
+@keyframes fontChange{
+    from{
+    background-color: darkgreen;
+    }
+    to{
+    background-color: red;
+    }
+
+}
+   
+@media (max-width:400px){
+    body{
+        font-style: italic;
+    }
+}
+@media (min-width:600px){
+    body{
+        font-size: 20px;
+    }
+}
+.loader{
+    width:150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid rgb(255, 0, 43);
+    border-top: 5px solid rgb(100, 217, 10);
+    animation: spinAnimate 1s ease-in-out 3s infinite normal;
+}
+@keyframes spinAnimate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
